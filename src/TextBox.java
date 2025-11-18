@@ -2,9 +2,16 @@ public class TextBox extends UIControl {
     private String text = ""; // Field
 
     public TextBox() {
-        // use the super() to call the constructor of the base class. In this instance is UIControl and we pass the parameters. In this case is a boolean. IT MUST BE FIRST
         super(true);
         System.out.println("TextBox constructor");
+    }
+
+    // @Override is called an annotation. An annotation is a label that we attach to a class member.
+    // And with this we give extra information to the Java compiler.
+    // In this case we're telling the Java compiler that we are overriding the two string method declared in the object class.
+    @Override
+    public String toString() {
+        return text;
     }
 
     public void setText(String text) {
