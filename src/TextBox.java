@@ -1,8 +1,14 @@
 public class TextBox extends UIControl {
     private String text = ""; // Field
 
-    public TextBox() {
-        super(true);
+//    public TextBox() {
+//        super(true);
+//    }
+
+
+    @Override
+    public void render() {
+        System.out.println("Rendering TextBox");
     }
 
     // @Override is called an annotation. An annotation is a label that we attach to a class member.
