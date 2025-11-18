@@ -3,7 +3,6 @@ public class UIControl {
 
     public UIControl(boolean isEnabled) {
         this.isEnabled = isEnabled;
-        System.out.println("UIControl constructor");
     }
     public void enable() {
         isEnabled = true;
