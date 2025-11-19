@@ -1,10 +1,8 @@
-// EXAMPLE OF TIGHTLY COUPLED CODE. THIS IS DEPENDENT ON THE TAXCALCULATOR
-
 public class TaxReport {
-private TaxCalculator calculator;
+private TaxCalculator2025 calculator;
 
 public TaxReport() {
-    calculator = new TaxCalculator(100_000);
+    calculator = new TaxCalculator2025(100_000);
 }
 
 public void show(){
